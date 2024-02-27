@@ -1,0 +1,40 @@
+{
+  "name": "back-local",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist",
+    "build": "yarn clean && tsc",
+    "start": "yarn build && node ./dist/app.js",
+    "dev": "concurrently  \"node --experimental-specifier-resolution=node ./dist/app.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "^3.9.5",
+    "@apollo/server": "^4.3.3",
+    "cors": "^2.8.5",
+    "graphql": "^16.8.1",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-ws": "^5.11.3",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.2.0",
+    "uuid": "^9.0.0",
+    "ws": "^8.12.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.13.0",
+    "@types/uuid": "^9.0.0",
+    "@types/ws": "^8.5.4",
+    "concurrently": "^8.2.2",
+    "react": "^18.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

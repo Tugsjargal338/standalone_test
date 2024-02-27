@@ -48,7 +48,7 @@ const server = new ApolloServer({
   ],
 });
 
-const uri = 'mongodb+srv://AnandOchir:bPK0qANRWzPSpAwp@cluster0.cwhcdjv.mongodb.net/chat?retryWrites=true&w=majority';
+
 
 mongoose.connect(uri);
 const connection = mongoose.connection;
